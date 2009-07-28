@@ -1,21 +1,18 @@
+%define upstream_name    Exporter
+%define upstream_version 5.63
 
-%define realname   Exporter
-%define version    5.63
-%define release    %mkrel 1
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
-Name:       perl-%{realname}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
-Group:      Development/Perl
 Summary:    Implements default import method for modules
-Source:     http://www.cpan.org/modules/by-module//%{realname}-%{version}.tar.gz
-Url:        http://search.cpan.org/dist/%{realname}
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: perl-devel
-
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module//%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildArch: noarch
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 The Exporter module implements an 'import' method which allows a module to
@@ -39,7 +36,7 @@ How to Export
     front of a function is optional, e.g.
 
 %prep
-%setup -q -n %{realname}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -60,5 +57,4 @@ rm -rf %buildroot
 %doc Changes
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
 
