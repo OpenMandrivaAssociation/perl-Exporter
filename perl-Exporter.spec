@@ -1,9 +1,9 @@
 %define upstream_name    Exporter
-%define upstream_version 5.63
+%define upstream_version 5.66
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    1
 
 Summary:    Implements default import method for modules
 License:    GPL+ or Artistic
