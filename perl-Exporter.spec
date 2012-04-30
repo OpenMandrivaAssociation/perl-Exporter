@@ -13,6 +13,7 @@ Source0:    http://www.cpan.org/modules/by-module//%{upstream_name}-%{upstream_v
 
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
+BuildRequires:	perl-devel
 
 %description
 The Exporter module implements an 'import' method which allows a module to
