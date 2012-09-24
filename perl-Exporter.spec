@@ -1,5 +1,5 @@
 %define upstream_name    Exporter
-%define upstream_version 5.66
+%define upstream_version 5.67
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,10 +9,9 @@ Summary:    Implements default import method for modules
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module//%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://search.cpan.org/CPAN/authors/id/T/TO/TODDR/Exporter-%upstream_version.tar.gz
 
 BuildArch: noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:	perl-devel
 
 %description
