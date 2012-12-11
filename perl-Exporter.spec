@@ -58,3 +58,27 @@ rm -rf %buildroot
 %{_mandir}/man3/*
 %perl_vendorlib/*
 
+
+
+%changelog
+* Mon Sep 24 2012 Bernhard Rosenkraenzer <bero@bero.eu> 5.670.0-1
++ Revision: 817501
+- 5.67
+
+* Mon Apr 30 2012 Crispin Boylan <crisb@mandriva.org> 5.660.0-1
++ Revision: 794640
+- New release
+
+* Mon Apr 18 2011 Funda Wang <fwang@mandriva.org> 5.630.0-2
++ Revision: 654958
+- rebuild for updated spec-helper
+
+* Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 5.630.0-1mdv2011.0
++ Revision: 401665
+- rebuild using %%perl_convert_version
+- fixed license field
+
+* Mon May 11 2009 Jérôme Quelin <jquelin@mandriva.org> 5.63-1mdv2010.0
++ Revision: 374432
+- import perl-Exporter
+
