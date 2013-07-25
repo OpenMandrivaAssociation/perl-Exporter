@@ -1,15 +1,15 @@
 %define upstream_name    Exporter
-%define upstream_version 5.67
+%define upstream_version 5.68
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
+Version:    %perl_convert_version 5.68
 Release:    1
 
 Summary:    Implements default import method for modules
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://search.cpan.org/CPAN/authors/id/T/TO/TODDR/Exporter-%upstream_version.tar.gz
+Source0:    http://www.cpan.org/authors/id/T/TO/TODDR/Exporter-5.68.tar.gz
 
 BuildArch: noarch
 BuildRequires:	perl-devel
@@ -81,4 +81,5 @@ rm -rf %buildroot
 * Mon May 11 2009 Jérôme Quelin <jquelin@mandriva.org> 5.63-1mdv2010.0
 + Revision: 374432
 - import perl-Exporter
+
 
